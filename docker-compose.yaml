@@ -30,5 +30,3 @@ services:
       - postgraphile
     volumes:
       - "./.meshrc.yaml:/root/.meshrc.yaml:ro"
-    environment:
-      DEBUG: 1
