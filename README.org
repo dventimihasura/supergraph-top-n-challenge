@@ -1,0 +1,21 @@
+* What
+
+This is a submission for [[https://github.com/hasura/supergraph-top-n-challenge][The SuperGraph Top-N Challenge]].
+
+* Why
+
+I wanted to see how well a no-code submission would perform.
+
+* How
+
+This uses an instance of PostgreSQL with its ~postgres_fdw~ Foreign
+Data Wrapper in order to join data to the two databases under test.
+It creates views over the foreign tables.  It uses PostGraphile to
+expose those views as a GraphQL API.  And, it uses graphql-mesh to
+transform the GraphQL API into the form needed by the test harness.
+
+* Steps
+
+```bash
+docker compose up
+```
